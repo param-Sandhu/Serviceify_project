@@ -1,0 +1,110 @@
+body{
+    font-family:'Karla', sans-serif;
+}
+
+/* Debugged with ChatGPT*/
+#feedback-prompt > div .material-symbols-outlined {
+    vertical-align: middle;
+  }
+
+#feedback-header{
+    margin-top: 5px;
+}
+
+/* This styles the feedback form as a whole*/
+#feedback-prompt{
+    z-index: 2;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border: 1px black solid;
+    padding: 15px 10px 5px 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+}
+
+/* This styles the feedback buttons */
+#positive ,#negative{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    
+}
+
+#positive:hover, #negative:hover{
+    cursor: pointer;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+}
+
+/* This styles the 'Feedback' button that opens and closes the form */
+#toggleform{
+    font-family:'Karla', sans-serif;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 20px;
+    /* margin-bottom: 10px;    */
+    
+}
+
+#feedbackButtons{
+    display: none;
+    justify-content: space-around;
+}
+
+#toggleform:hover{
+    cursor: pointer;
+    background-color: #F3F3F3;
+}
+
+#userFeedback{
+    display: none;
+}
+
+/* This styles the submit button*/
+#submitButton{
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #1282A2;
+    color: white;
+    border: 1px solid #1282A2;
+    border-radius: 15px;
+    padding: 4px;
+    display: none;
+}
+
+/* This styles the container that contains the submit button */
+#submitBtn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+input[type=submit]:hover{
+    opacity: .9;
+    cursor: pointer;
+}
+
+/* This styles the message after the user submits the form */
+#on-submit{
+    display: none;
+    justify-content: center;
+}
+
+/* This styles the actual text area that the user uses for the feedback */
+textarea{
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 800px){
+    #feedback-prompt{
+        bottom: 150px;
+    }
+}

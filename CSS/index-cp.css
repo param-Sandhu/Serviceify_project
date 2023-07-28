@@ -1,0 +1,237 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow: hidden;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1282A2; 
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#company-logo{
+    font-family: 'Karla', sans-serif;
+    color: white;
+    padding-left: 1rem;
+}
+
+
+.nav-items ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.nav-items li{
+    list-style: none;
+}
+
+.nav-items li:hover{
+    text-decoration: underline;
+}
+
+.nav-items li a{
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    display: block;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+
+#side-panel{
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* background-color: #cff0fa; */
+    background-color: #EAECEE;
+    overflow-x: hidden;
+    padding-top: 20px;
+    bottom: 0;
+}
+
+#side-panel h3{
+    text-align: center;
+    padding-right: 20px;
+    margin-top: 0;
+    font-family: 'Karla', sans-serif;
+
+}
+
+#side-panel li{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+
+#side-panel ol{
+    /* margin: 0; */
+    padding: 0;
+}
+
+#side-panel a{
+    text-decoration: none;
+    padding: 20px 20px 20px 20px;
+    padding-left: 0;
+    display: block;
+    font-family: 'Karla', sans-serif;
+    color: black;
+}
+
+#side-panel-hr{
+    border: 1px solid black;
+}
+
+#side-panel a:hover{
+    text-decoration: underline;
+    background-color: #D3D3D3;
+}
+
+.main{
+    margin-left: 200px;
+    margin-top: 85px;
+    font-family: 'Karla', sans-serif;
+    padding-bottom: 50px;
+}
+
+.main p{
+    margin-left: 580px;
+    margin-top: 340px;
+    font-family: 'Karla', sans-serif;
+}
+
+#footer{
+    bottom: 0;
+    width: 100%;
+    margin-left: 200px;
+    text-align: center;
+    background-color: #1282A2;
+    padding: 20px;
+    font-family: 'Karla', sans-serif;
+    color: white;
+    position: fixed;
+}
+
+@media only screen and (max-width: 760px){
+    #side-panel{
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        z-index: 0;
+    }
+
+    /* .toggle-button{
+        display: flex; */
+    }
+
+    .navbar{
+        z-index: 1;
+        position: absolute;
+        /* flex-direction: column;
+        align-items: flex-start; */
+    }
+
+    .navbar .nav-items{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .nav-items li{
+        text-align: center;
+        padding-right: 15px;
+    }
+
+    /* .nav-items ul{
+        flex-direction: column;
+        width: 100%;
+
+    } */
+
+    .main{
+        text-align: center;
+        position: relative;
+        margin-left: -100px;
+        margin-top: 300px;
+        top: 800px;
+        padding-bottom: 1rem;
+
+        /* display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        text-align: center;
+        position: relative;
+        margin-left: -100px;
+        margin-top: 300px;
+        padding-bottom: 1rem; */
+
+        
+    }
+
+    .main p{
+        visibility: hidden;
+    }
+
+    #footer{
+        margin-top: auto;
+        position: absolute;
+        margin-left: 0;
+        bottom: 0;
+        margin-bottom: -120px;
+    }
+
+    #side-panel{
+        margin-top: 160px;
+        height: auto;
+    }
+
+    #side-panel li a{
+        text-align: center;
+    }
+
+
+
+    #footer p{
+        margin-right: 0;
+    }
+
+
+
+
+
+
+
+

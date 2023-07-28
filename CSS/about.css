@@ -1,0 +1,255 @@
+body{
+    background-color: white;
+    margin: 0;
+
+}
+
+.page-container{
+    min-height: 100vh;
+    position: relative;
+}
+
+/* This section applies CSS to the sfahre buttons */
+.share-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fb-share-button{
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    width: 60px;
+    padding-bottom: 2px;
+}
+
+/* -- This section applies CSS to the navbar.-- */
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: #3E78B2; */
+    background-color: #1282A2;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    position: fixed;
+    top: 0;
+}
+
+#company-logo{
+    font-family: 'Karla', sans-serif;
+    color: white;
+    padding-left: 1rem;
+}
+
+
+.nav-items ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.nav-items li{
+    list-style: none;
+}
+
+.nav-items li:hover{
+    text-decoration: underline;
+}
+
+.nav-items li a{
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    display: block;
+}
+
+.main{
+    font-family: 'Karla', sans-serif;
+    margin-top: 85px;
+    padding: 0 20px;
+    margin-left: 15px;
+    margin-bottom: 150px;
+    
+}
+
+/*--This section applies CSS to the footer.--*/
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #1282A2;
+    padding: 20px;
+    font-family: 'Karla', sans-serif;
+    color: white;
+}
+
+.bottom-hr{
+    clear: both;
+    visibility: hidden;
+}
+
+/*--This section applies CSS to the hamburger toggle button.
+NOTE: The menu does not colapse for this section. Collapsible 
+menu is implemented in Unit - 4 using Javascript. --*/
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+
+.toggle-button{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion-menu {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: medium;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+.accordion-menu:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .menu-content.active, .accordion-menu:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .menu-content {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+/*--This section changes the applied CSS when the 
+screen width is less than 800px, for example - in 
+mobile devices.--*/
+
+@media only screen and (max-width: 800px){
+    *{
+        overflow-x: hidden;
+    }
+    .navbar{
+        z-index: 1;
+        top: 0;
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-start;
+
+        
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .nav-items{
+        display: none;
+        width: 100%;
+    }
+
+    .nav-items ul{
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .nav-items li{
+        text-align: center;
+        padding-right: 15px;
+    }
+
+    .main{
+        margin-top: 100px;
+
+    }
+
+    #footer{
+        position: fixed;
+        padding: 0;
+        bottom: 0;
+    }
+
+    .nav-items.active{
+        display: flex;
+    }
+
+    .fb-share-button{
+        right: 0;
+    }
+
+
+
+}
+
+
+
+
+
+
+

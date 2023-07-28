@@ -1,0 +1,443 @@
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: white;
+    box-sizing: border-box;
+    
+}
+
+/* This section applies CSS to the google translate button */
+#google_translate_element{
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    
+}
+
+/* This section applies CSS to the share button in the footer. */
+.share-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fb-share-button{
+    display: inline-block;
+    position: relative;
+    right: 100px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    width: 60px;
+    padding-bottom: 2px;
+}
+
+.card{
+    width: 90%;
+    max-width: 400px;
+    max-height: 500px;
+    background: linear-gradient(89.8deg, rgb(39, 115, 255) 4.3%, rgb(62, 211, 232) 101.4%);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 40px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 10pxx;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 16px;
+
+}
+
+.weather-icon{
+    width: 100px;
+    margin-top: 30px;
+
+}
+
+.weather h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    display: none;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Styles from index.css */
+body{
+    background-color: white;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+/*--This applies CSS to the navbar.--*/
+
+.navbar{
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1282A2; 
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* padding: 12px; */
+}
+
+#company-logo{
+    font-family: 'Karla', sans-serif;
+    color: white;
+    padding-left: 1rem;
+}
+
+
+.nav-items ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.nav-items li{
+    list-style: none;
+}
+
+.nav-items li:hover{
+    text-decoration: underline;
+}
+
+.nav-items li a{
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    display: block;
+}
+
+/*--This applies CSS to the toggle button.--*/
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.toggle-button{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+/*--This applies CSS to the side panel.--*/
+
+
+#side-panel{
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 80px;
+    left: 0;
+    /* background-color: #cff0fa; */
+    background-color: #EAECEE;
+    overflow-x: hidden;
+    padding-top: 20px;
+    
+    
+}
+
+#side-panel h3{
+    text-align: center;
+    padding-right: 20px;
+    margin-top: 0;
+    font-family: 'Karla', sans-serif;
+    /* align-items: center; */
+
+}
+
+#side-panel li{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+
+#side-panel ol{
+    /* margin: 0; */
+    padding: 0;
+}
+
+#side-panel a{
+    text-decoration: none;
+    padding: 20px 20px 20px 20px;
+    padding-left: 0;
+    display: block;
+    font-family: 'Karla', sans-serif;
+    color: black;
+}
+
+#side-panel-hr{
+    border: 1px solid black;
+}
+
+
+
+#side-panel a:hover{
+    text-decoration: underline;
+    background-color: #D3D3D3;
+}
+
+.bottom-hr{
+    clear: both;
+    visibility: hidden;
+}
+
+/*--This applies CSS to the footer.--*/
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    margin-left: 200px;
+    text-align: center;
+    background-color: #1282A2;
+    padding: 20px 0;
+    font-family: 'Karla', sans-serif;
+    color: white;  
+    padding-right: 400px; 
+}
+
+#footer p{
+    margin-right: 180px;
+}
+
+/* Scroll to top button */
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 15px;
+    cursor: pointer;
+    background-color: white;
+    height: 40px;
+    width: 60px;
+    color: black;
+    border: 1px black solid;
+    border-radius: 10px;
+    font-size: 16pt;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+#scrollToTop:hover{
+    background-color: #F3F3F3;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+
+/*--This section changes the applied CSS when the 
+screen width is less than 800px, for example - in 
+mobile devices.--*/
+
+/* Test code */
+
+
+@media only screen and (max-width: 800px){
+    *{
+        overflow-x: hidden;
+    }
+
+    #google_translate_element{
+        top: 650px;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+
+    .weather-container{
+        margin-top: 600px;
+        min-height: 800px;
+    }
+
+    #side-panel{
+        z-index: 0;
+        height: auto;
+        /* width: 100vw; */
+        width: 100%;
+        position: absolute;
+        top: 80px;
+    }
+
+    .navbar{
+        z-index: 2;
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .nav-items{
+        display: none;
+        width: 100%;
+    }
+
+    .nav-items ul{
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .nav-items li{
+        text-align: center;
+        padding-right: 15px;
+    }
+   
+    #footer{
+        padding: 20px;
+        position: relative;
+        margin-left: 0;
+        bottom: 0;
+    }
+
+    #side-panel li a{
+        text-align: center;
+        
+        
+    }
+
+    #side-panel h3{
+        margin-right: 20px;
+        padding-right: 0;
+    }
+
+    #footer p{
+        margin-right: 0;
+
+    }
+
+    #scrollToTop{
+        z-index: 3;
+        display: block;
+    }
+
+    .nav-items.active{
+        display: flex;
+    }
+    .fb-share-button{
+        right: 0;
+    }
+}

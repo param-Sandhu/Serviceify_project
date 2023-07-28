@@ -1,0 +1,259 @@
+body{
+    background-color: white;
+    margin: 0;
+
+}
+.page-container{
+    position: relative;
+    min-height: 100vh;
+}
+
+/* This section applies CSS to the share button in the footer */
+.share-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fb-share-button{
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    width: 60px;
+    padding-bottom: 2px;
+}
+
+/*--This applies CSS to the navbar.--*/
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: #3E78B2; */
+    background-color: #1282A2;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    position: fixed;
+    top: 0;
+
+}
+
+#company-logo{
+    font-family: 'Karla', sans-serif;
+    color: white;
+    padding-left: 1rem;
+}
+
+.nav-items ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.nav-items li{
+    list-style: none;
+}
+
+.nav-items li:hover{
+    text-decoration: underline;
+}
+
+.nav-items li a{
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    display: block;
+}
+
+.main{
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    margin-top: 85px;
+    padding-bottom: 2.5rem;
+    padding: 0 20px;
+    
+    top: 490px;
+}
+
+/*This applies CSS to the main contact form.*/
+
+
+.contact-info{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+}
+
+input[type=text]{
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+input[type=email]{
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.main input[type=submit]{
+    height: 40px;
+    width: 120px;
+    background-color: #1282A2;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: none;
+}
+
+input[type=submit]:hover{
+    opacity: .9;
+    cursor: pointer;
+}
+
+textarea{
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.bottom-hr{
+    clear: both;
+    visibility: hidden;
+}
+
+/*--This applies CSS to the footer.--*/
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #1282A2;
+    /* padding: 20px; */
+    font-family: 'Karla', sans-serif;
+    color: white;
+    
+}
+
+.csupport-r2c1{
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+}
+
+.csupport-r2c2{
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+/*This applies CSS to the toggle button.*/
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+
+.toggle-button{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+/*--This section changes the applied CSS when the 
+screen width is less than 800px, for example - in 
+mobile devices.--*/
+
+@media only screen and (max-width: 800px){
+    *{
+        overflow-x: hidden;
+    }
+    .navbar{
+        z-index: 1;
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar .nav-items{
+        display: none;
+        width: 100%;
+    }
+
+    .nav-items ul{
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .nav-items li{
+        text-align: center;
+        padding-right: 15px;
+    }
+
+    .nav-items.active{
+        display: flex;
+    }
+
+    .main{
+        position: relative;
+        top: 0;
+        padding-bottom: 100px;
+    }
+
+    #footer{
+        position: fixed;
+        bottom: 0;
+    }
+
+    .fb-share-button{
+        right: 0;
+    }
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/repairs.css">
+    <link rel="stylesheet" href="../CSS/feedback-style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap" rel="stylesheet">
+    <!-- ----- -->
+
+    <!--Material icons-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- ----- -->
+    <title>Repairs</title>
+</head>
+
+<body>
+    <!-- This is the facebook share button in the footer -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"
+        nonce="6HSYFwpN"></script>
+
+    <!--This div contains the navbar (logo and the various links)-->
+    <div class="navbar">
+        <div id="company-logo">
+            <h1><span>SERVICEIFY</span></h1>
+        </div>
+
+        <a href="#" class="toggle-button" aria-label="toggleNavbar">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <div class="nav-items">
+            <ul>
+                <li><a href="../index.html"> Home </a></li>
+                <li><a href="../about.html"> About </a></li>
+                <li><a href="../contact-us.html"> Contact Us </a></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+    <!--This div contains the side panel-->
+    <div id="side-panel">
+        <h3>Categories</h3>
+        <hr id="side-panel-hr">
+        <ol>
+            <li><a href="technology.html"> Technology </a> </li>
+            <li><a href="car-rental.html"> Car Rental </a> </li>
+            <li><a href="home-decor.html">Home Decor</a> </li>
+            <li><a href="hardware.html">Hardware</a> </li>
+            <li><a href="books.html">Books</a> </li>
+            <li><a href="repairs.html">Repairs</a> </li>
+            <li> <a href="map.html">Map</a></li>
+            <li> <a href="../openWeather.html">Weather</a></li>
+        </ol>
+
+    </div>
+
+    <!--This div contains the entire core content i.e list of services-->
+    <div class="main">
+        <div id="google_translate_element"></div>
+        <h3>Repair Services</h3>
+        <div class="note">
+            <p>NOTE: Unless otherwise specified, Home Delivery covers all addresses in USA and Canada.</p>
+        </div>
+
+        <!--List of companies-->
+
+        <div class="company-list"> <!--This div encompasses the list of companies-->
+
+            <!--Each such div (company-card) contains an individual service (an image and all the related information)-->
+            <div class="company-card">
+                <img src="../company-logo/repairs/Apple-Logo.png" alt="apple-logo" width="200" height=auto>
+                <div class="company-info">
+                    <p>
+                        <strong>Company</strong> : Apple <br />
+                        <strong>Type</strong> : Large Business <br />
+                        <strong>Website</strong> : <a href="https://www.apple.com/ca/">Apple.ca</a> <br />
+                        <strong>Contact no.</strong> : (123)456-7890 <br />
+                        <strong>Home Delivery</strong> : Yes
+
+                    </p>
+                </div>
+                <div class="fav-class">
+                    <button class="favourites"><img src="../favourite-icon/star.png" alt=""></button>
+                    <!-- <img src="../favourite-icon/star.png" alt="" class="favourites"> -->
+                </div>
+
+            </div>
+
+            <div class="company-card">
+                <img src="../company-logo/repairs/iremonts.png" alt="iremonts-logo" width="200" height=auto>
+                <div class="company-info">
+                    <p>
+                        <strong>Company</strong> : Iremonts <br />
+                        <strong>Type</strong> : Small Business <br />
+                        <strong>Address</strong> : 33 st, Vancouver BC <br />
+                        <strong>Contact no.</strong> : (123)456-7890 <br />
+                        <strong>Home Delivery</strong> : No
+
+                    </p>
+                </div>
+                <div class="fav-class">
+                    <button class="favourites"><img src="../favourite-icon/star.png" alt=""></button>
+                </div>
+
+            </div>
+
+            <div class="company-card">
+                <img src="../company-logo/repairs/the-phone-repair.jpg" alt=" thephonerepair-logo" width="200"
+                    height=auto>
+                <div class="company-info">
+                    <p>
+                        <strong>Company</strong> : The Phone Repair Store <br />
+                        <strong>Type</strong> : Small Business <br />
+                        <strong>Website</strong> : <a href="https://www.ubreakifix.com/ca">thephonerepair.ca</a> <br />
+                        <strong>Contact no.</strong> : (123)456-7890 <br />
+                        <strong>Home Delivery</strong> : No
+
+                    </p>
+                </div>
+                <div class="fav-class">
+                    <button class="favourites"><img src="../favourite-icon/star.png" alt=""></button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- This is the code for the feedback form -->
+    <div id="feedback-prompt">
+        <div id="feedback-header">
+            <span class="material-symbols-outlined">comment</span>
+            <button id="toggleform">Feedback</button>
+        </div>
+
+
+        <div id="feedbackButtons">
+            <button id="positive" aria-label="positiveReview"><span class="material-symbols-outlined">
+                    thumb_up
+                </span>
+            </button>
+            <button id="negative" aria-label="negativeReview"><span class="material-symbols-outlined">
+                    thumb_down
+                </span>
+            </button>
+        </div>
+        <p id="on-submit"><span>Thanks for the review!</span></p>
+        <textarea name="" id="userFeedback" cols="30" rows="10" placeholder="Tell us what you liked..."></textarea>
+        <br>
+        <div id="submitBtn">
+            <input type="submit" id="submitButton" aria-label="submitButton">
+        </div>
+
+    </div>
+    <div id="status-message"></div>
+
+    <!-- This div contains the scroll to top button -->
+    <div align="right" class="top">
+        <button id="scrollToTop"><span class="material-symbols-outlined">
+                arrow_upward
+            </span></button>
+    </div>
+
+
+    <!--This div contains the footer-->
+    <hr class="bottom-hr">
+    <div id="footer">
+
+        <p>Made with ❤️ and ☕️ in Canada </p>
+        <p>Last edited by: <em>Parampreet Singh Sandhu</em> on 05/31/2023 </p>
+
+        <!-- This div comes in handy in case of multiple share buttons -->
+        <div class="share-buttons">
+            <div class="fb-share-button" data-href="http://127.0.0.1:5500/index.html" data-layout="" data-size=""><a
+                    target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A5500%2Findex.html&amp;src=sdkpreparse"
+                    class="fb-xfbml-parse-ignore">Share</a></div>
+        </div>
+
+    </div>
+    <!-- Javascript files and code -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../Javascript/navbar.js"></script>
+    <script src="../Javascript/feedback-index.js"></script>
+    <script src="../Javascript/favourites.js"></script>
+    <script src="../Javascript/scroll.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+
+            );
+        }
+    </script>
+
+</body>
+
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+<!-- CITATIONS-->
+
+<!--Image sources:
+    1. Apple - https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png
+    2. Iremonts - https://www.iremonts.lv/wp-content/uploads/iremonts-logo-2-min.png
+    3. The Phone repair store - https://t4.ftcdn.net/jpg/04/10/06/79/360_F_410067961_SY4tD5nIC5ParQl82PAKvqivs3xCaJws.jpg-->
+<!-------------------------------------------------------------------------------------------------->

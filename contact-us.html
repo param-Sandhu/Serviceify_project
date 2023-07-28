@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/contact-us.css">
+    <link rel="stylesheet" href="CSS/feedback-style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap" rel="stylesheet">
+    <!-- ----- -->
+
+    <!--Material icons-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- ----- -->
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <!-- This is the facebook share button in the footer -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"
+        nonce="6HSYFwpN"></script>
+
+    <!--This div contains the navbar-->
+    <div class="navbar">
+        <div id="company-logo">
+            <h1><span>SERVICEIFY</span></h1>
+        </div>
+
+        <a href="#" class="toggle-button" aria-label="toggleNavbar">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <div class="nav-items">
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="contact-us.html"> Contact Us </a></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <br />
+
+    <!--This contains the core content for the 'Contact us' section-->
+    <div class="main">
+        <div id="google_translate_element"></div>
+
+        <!--Table for customer service information-->
+        <table class="contact-info">
+            <span class="csupport-heading">
+                <caption>Customer Support Contact</caption>
+            </span>
+            <tr>
+                <td class="csupport-r1c1">Customer support email</td>
+                <td class="csupport-r1c2">email@abc.ca</td>
+            </tr>
+            <tr>
+                <td class="csupport-r2c1">Customer support phone</td>
+                <td class="csupport-r2c2">(123)456-7890</td>
+            </tr>
+        </table>
+
+
+        <img src="company-social/facebook-logo.png" alt="faceebook-logo" width="30" height=auto>
+        <a href="https://www.facebook.com/"> Facebook/Serviceify</a>
+
+        <img src="company-social/Twitter-logo-png.png" alt="twitter-logo" width="30" height=auto>
+        <a href="https://twitter.com">@Serviceify</a>
+
+        <!--Form for customer feedback-->
+        <h3>Customer feedback form</h3>
+
+        <form action="mailto:email@abc.ca" method="get" name="cform">
+            <label for="user_name" aria-label="Name">Your name: </label>
+            <input type="text" id="u-name"><br />
+
+            <label for="email" aria-label="email">Your email: </label>
+            <input type="email" name="uemail"><br />
+
+            <label for="">Your message:</label><br />
+            <textarea name="" id="" cols="30" rows="10" aria-label="Message"></textarea><br>
+            <input type="submit" onclick="ValidateEmail(document.cform.uemail)">
+        </form>
+    </div>
+
+    <!-- This is the code for the feedback form -->
+    <div id="feedback-prompt">
+        <!-- <p>Feedback</p> -->
+        <div id="feedback-header">
+            <span class="material-symbols-outlined">comment</span>
+            <button id="toggleform">Feedback</button>
+        </div>
+
+
+        <div id="feedbackButtons">
+            <button id="positive" aria-label="positiveReview"><span class="material-symbols-outlined">
+                    thumb_up
+                </span>
+            </button>
+            <button id="negative" aria-label="negativeReview"><span class="material-symbols-outlined">
+                    thumb_down
+                </span>
+            </button>
+        </div>
+        <p id="on-submit"><span>Thanks for the review!</span></p>
+        <textarea name="" id="userFeedback" cols="30" rows="10" placeholder="Tell us what you liked..."></textarea>
+        <br>
+        <div id="submitBtn">
+            <input type="submit" id="submitButton" aria-label="submitButton">
+        </div>
+
+    </div>
+
+    <!--This div contains the footer-->
+    <hr class="bottom-hr">
+    <div id="footer">
+
+        <p>Made with ❤️ and ☕️ in Canada </p>
+        <p>Last edited by: <em>Parampreet Singh Sandhu</em> on 05/31/2023 </p>
+
+        <!-- This div comes in handy in case of multiple share buttons -->
+        <div class="share-buttons">
+
+            <div class="fb-share-button" data-href="http://127.0.0.1:5500/index.html" data-layout="" data-size=""><a
+                    target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A5500%2Findex.html&amp;src=sdkpreparse"
+                    class="fb-xfbml-parse-ignore">Share</a></div>
+        </div>
+
+    </div>
+
+    <!-- Javascript files and code -->
+    <script src="Javascript/navbar.js"></script>
+    <script src="Javascript/form-validation.js"></script>
+    <script src="Javascript/feedback-index.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+
+            );
+        }
+    </script>
+
+</body>
+
+</html>
+
+<!-------------------------------------------------------------------------------------------------->
+
+<!--CITATIONS-->
+
+<!--Image sources:
+    1. Facebook logo - https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png
+    2. Twitter logo - https://www.edigitalagency.com.au/wp-content/uploads/Twitter-logo-png.png-->
+<!-------------------------------------------------------------------------------------------------->
